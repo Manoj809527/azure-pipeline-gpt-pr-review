@@ -18,8 +18,9 @@ export async function reviewFile(targetBranch: string, fileName: string, httpsAg
         As a code reviewer, your task is:
                 - Review only added, edited or deleted lines.
                 - If there's no bugs and the changes are correct, write only 'No feedback.'
-                - If there's bug or uncorrect code changes, don't write 'No feedback.'`;
-
+                - If there's bug or uncorrect code changes, don't write 'No feedback.'
+                - Review the code for cognitive complexity, maintainability, potential bugs, and adherence to best practices. Consider SonarQube's findings and recommendations. Provide specific feedback on areas for improvement and potential code quality issues. `;
+  
   try {
     let choices: any;
 
